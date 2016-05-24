@@ -1,21 +1,81 @@
-<style type="text/css">
-	html {
-		background: url(puppy.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
-	}
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="globe.css">
+	<link rel="stylesheet" type="text/css" href="starwars.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
 
-	h1 {
-		font-family: Geneva, Tahoma, Verdana, sans-serif;
-		font-size: 49px;
-		font-style: normal;
-		font-variant: small-caps;
-		font-weight: bold;
-		line-height: 53.9px;
-		color: white;
-		text-align: center;
-	}
-</style>
+<body>
+	<audio preload="auto">
+		<source src="https://ia801703.us.archive.org/15/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.ogg" type="audio/ogg" />
+		<source src="https://ia801703.us.archive.org/15/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.mp3" type="audio/mpeg" />
+	</audio>
 
-<h1>
-	My site is coming soon.. Until then enjoy the puppy :)
-</h1>
+	<section class="stage">
+		<figure class="ball">
+			<span class="shadow"></span>
+			<div id="overlay">
+				<span id="pause">
+					<i class="fa fa-pause" aria-hidden="true"></i>
+				</span>
+			</div>
+		</figure>
 
+	</section>
+
+<!-- 	<div class="contain-demo">
+	  <svg width="375" height="600" viewBox="0 0 375 300">
+	    <desc>Filter to create light on tree graphic.</desc>
+	      <filter id="demo4"> -->
+	        <!--Blur effect-->
+	        <!-- <feGaussianBlur stdDeviation="3" result="blur4" /> -->
+	        <!--Lighting effect-->
+	        <!-- <feSpecularLighting result="spec4" in="blur4" specularExponent="35" lighting-color="#cccccc"> -->
+	            <!--Light source effect-->
+	            <!-- <fePointLight x="75" y="100" z="200"> -->
+	              <!--Lighting Animation-->
+<!-- 	              <animate attributeName="x" values="75;320;75" dur="10s" repeatCount="indefinite" />
+	            </fePointLight>
+	        </feSpecularLighting> -->
+	        <!--Composition of inputs-->
+<!-- 	        <feComposite in="SourceGraphic" in2="spec4" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
+	      </filter>
+	      <desc>Filter to blur sun graphic.</desc>
+	      <filter id="demo5">
+	        <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur5" /> -->
+	        <!--Composition of inputs-->
+	   <!--      <feComposite in="SourceGraphic" in2="blur5" operator="arithmetic" k1="0" k2="3" k3="3" k4="0" />
+	      </filter>
+	    <desc>Tree with three red apples and a sun to demonstrate lighting filter animations.</desc> -->
+	    <!--Apple tree graphic-->
+	    <!-- <g class="tree" filter="url(#demo4)" width="375"> -->
+	      <!-- Leaves -->
+	   <!--    <path fill="#A6BA50" stroke="#A6BA50" stroke-linecap="round" d="M251.203 175.839c3.07 4.72 4.84 10.35 4.84 16.39 0 16.69-13.52 30.22-30.21 30.22 -4.68 0-9.11-1.06-13.06-2.96 -5.32 8.66-14.87 14.43-25.77 14.43 -12.5 0-23.22-7.59-27.82-18.41 -0.79 0.08-1.58 0.11-2.39 0.11 -16.69 0-30.21-13.53-30.21-30.22 0-4.14 0.83-8.09 2.34-11.69 -1.51-3.6-2.34-7.55-2.34-11.69 0-16.68 13.52-30.21 30.21-30.21 4.59 0 8.94 1.02 12.84 2.86 5.26-8.86 14.93-14.8 25.99-14.8 9.05 0 17.18 3.99 22.71 10.3 2.4-0.61 4.91-0.94 7.5-0.94 16.69 0 30.21 13.53 30.21 30.22C256.043 165.489 254.273 171.119 251.203 175.839z" />
+	    </g>
+	    <desc>Yellow sun moving from left to right.</desc>
+	    <ci -->rcle class="sun" fill="#F9EC48" cx="57" cy="90" r="27" filter="url(#demo5)">
+	        <!--Sun Animation-->
+	        <!-- <animate attributeName="cx" values="57;320;57" dur="10s" repeatCount="indefinite" />
+	        <animate attributeName="cy" values="100;70;100;70;100" dur="10s" repeatCount="indefinite" />
+	    </circle>
+	  </svg>
+	</div>
+ -->
+	<div id="titles">
+		<div id="titlecontent">
+			<p>Alex Plishka</p>
+			<p>Works at Amazon.com</p>
+			<p>Is a totally cool dude!</p>
+			<p>Click the Earth to toggle audio</p>
+			<p>
+				<a href="https://github.com/aplishka"><i class="fa fa-github" aria-hidden="true"></i></a>
+				<a href="https://ca.linkedin.com/in/alexplishka"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+			</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script type="text/javascript" src="starwars-music.js"></script>
+</body>
+</html>

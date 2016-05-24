@@ -1,0 +1,25 @@
+body {
+  width: 300px;
+  margin: 20px auto;
+  background: #000 url('space.jpg') repeat;
+}
+
+#overlay {  
+	background: rgba(0,0,0,.75);
+	text-align: center;
+	opacity:0;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	height: 100%;
+}
+
+#pause {
+	font-family:Helvetica;
+	font-weight:900;
+	color:rgba(255,255,255,.85);
+	font-size:96px;
+}
+
+#pause i {
+	margin-top: 100px;
+}
